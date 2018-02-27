@@ -82,6 +82,7 @@ $('#house').click(() =>{
   $('#rowProductos').empty();
 });
  
+ 
  function showHouse(data) {
   for(let i = 1; i<=12; i++){
     $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
