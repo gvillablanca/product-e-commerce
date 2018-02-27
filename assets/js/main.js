@@ -31,7 +31,7 @@ function search(search) {
         
         $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
             <div class="col-md-4 col-lg-4">
-              <img class="card-img-top img-${i}" src="${producto.thumbnail}">
+              <img  class="card-img-top img-${i}" src="${producto.thumbnail}">
             </div>
             <div class="col-md-8">
               <h5 class="card-title text-${i}">${producto.title}</h5>
@@ -60,7 +60,7 @@ $('#clothes').click(() =>{
   for(let i = 1; i<=12 ; i++){
     $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
                                     <div class="col-md-4">
-                                      <img class="card-img-top img-${i}" src="${data.picture}">
+                                      <img data-toggle="modal" data-target="#myModal" class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
                                     <div class="col-md-8">
                                       <h5 class="card-title text-${i}">${data.name}</h5>
@@ -85,7 +85,7 @@ $('#house').click(() =>{
   for(let i = 1; i<=12; i++){
     $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
                                     <div class="col-md-4">
-                                      <img class="card-img-top img-${i}" src="${data.picture}">
+                                      <img data-toggle="modal" data-target="#myModal" class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
                                     <div class="col-md-8">
                                       <h5 class="card-title text-${i}">${data.name}</h5>
@@ -110,7 +110,7 @@ $('#tech').click(() =>{
   for(let i = 1; i<=12 ; i++){
     $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
                                     <div class="col-md-4">
-                                      <img class="card-img-top img-${i}" src="${data.picture}">
+                                      <img data-toggle="modal" data-target="#myModal" class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
                                     <div class="col-md-8">
                                       <h5 class="card-title text-${i}">${data.name}</h5>
@@ -135,7 +135,7 @@ $('#beauty').click(() =>{
   for(let i = 1; i<=12 ; i++){
     $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
                                     <div class="col-md-4">
-                                      <img class="card-img-top img-${i}" src="${data.picture}">
+                                      <img data-toggle="modal" data-target="#myModal" class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
                                     <div class="col-md-8">
                                       <h5 class="card-title text-${i}">${data.name}</h5>
@@ -160,7 +160,7 @@ $('#child').click(() =>{
   for(let i = 1; i<=12 ; i++){
     $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
                                     <div class="col-md-4">
-                                      <img class="card-img-top img-${i}" src="${data.picture}">
+                                      <img data-toggle="modal" data-target="#myModal" class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
                                     <div class="col-md-8">
                                       <h5 class="card-title text-${i}">${data.name}</h5>
@@ -185,7 +185,7 @@ $('#pet').click(() =>{
   for(let i = 1; i<=12 ; i++){
     $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
                                     <div class="col-md-4">
-                                      <img class="card-img-top img-${i}" src="${data.picture}">
+                                      <img data-toggle="modal" data-target="#myModal" class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
                                     <div class="col-md-8">
                                       <h5 class="card-title text-${i}">${data.name}</h5>
@@ -209,7 +209,7 @@ function inicio(){
   for(let i = 1; i<=12 ; i++){
        $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
                                     <div class="col-md-4">
-                                      <img class="card-img-top img-${i}" src="${data.picture}">
+                                      <img data-toggle="modal" data-target="#myModal" class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
                                     <div class="col-md-8">
                                       <h5 class="card-title text-${i}">${data.name}</h5>
