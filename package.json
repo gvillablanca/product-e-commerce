@@ -1,0 +1,23 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "e-commerce con spa y api de mercado libre ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvillablanca/product-e-commerce.git"
+  },
+  "author": "genoveva-america-maria jose-daniela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvillablanca/product-e-commerce/issues"
+  },
+  "homepage": "https://github.com/gvillablanca/product-e-commerce#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
