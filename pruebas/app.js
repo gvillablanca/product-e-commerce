@@ -29,7 +29,7 @@ function search(search) {
         $.each(data.results, function(i, producto) {
           
         
-        $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
+        $('#rowProductos').append(`<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 imgcont" data-index="${i}">
                                     <div class="col-md-4">
                                       <img class="card-img-top img-${i}" src="${producto.thumbnail}">
                                     </div>
@@ -42,7 +42,6 @@ function search(search) {
       });
    });
 }
-
 $('#clothes').click(() =>{
   fetch('https://api.mercadolibre.com/categories/MLC4970')
   .then(response => {
@@ -56,7 +55,7 @@ $('#clothes').click(() =>{
  
  function showClothes(data) {
   for(let i = 1; i<=3 ; i++){
-    $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
+    $('#showFilters').append(`<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 imgcont" data-index="${i}">
                                     <div class="col-md-4">
                                       <img class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
