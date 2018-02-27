@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(() => {
   fetch('https://api.mercadolibre.com/sites/MLC/search?q=ipod')
   .then(function(response) {
@@ -216,8 +217,16 @@ function inicio(){
                                       <p>${data.total_items_in_this_category}</p>
         </div>
       </div>`);
-    }
-  }
- }
+=======
+'use strict';
 
-inicio();
+(function () {
+    function init() {
+        var router = new Router([
+            
+        ]);
+>>>>>>> x
+    }
+    init();
+
+}());
