@@ -55,7 +55,7 @@ $('#clothes').click(() =>{
  
  function showClothes(data) {
   for(let i = 1; i<=3 ; i++){
-    $('#showFilters').append(`<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 imgcont" data-index="${i}">
+    $('#rowProductos').append(`<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 imgcont" data-index="${i}">
                                     <div class="col-md-4">
                                       <img class="card-img-top img-${i}" src="${data.picture}">
                                     </div>
