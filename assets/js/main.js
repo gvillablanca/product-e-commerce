@@ -43,32 +43,6 @@ function search(search) {
    });
 }
 
-function inicio(){
-  fetch('https://api.mercadolibre.com/categories/MLC1168')
-  .then(response => {
-    return response.json();
-  })
-  .then(data =>{
-    showClothes(data);
-    console.log(data);
-  });
- 
- function showClothes(data) {
-  for(let i = 1; i<=12 ; i++){
-       $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
-                                    <div class="col-md-4">
-                                      <img class="card-img-top img-${i}" src="${data.picture}">
-                                    </div>
-                                    <div class="col-md-8">
-                                      <h5 class="card-title text-${i}">${data.name}</h5>
-                                      <p>${data.total_items_in_this_category}</p>
-        </div>
-      </div>`);
-    }
-  }
- }
-
- inicio();
 
 $('#clothes').click(() =>{
   fetch('https://api.mercadolibre.com/categories/MLC4970')
@@ -220,3 +194,30 @@ $('#pet').click(() =>{
                                     </div>`);
   }
 }
+
+function inicio(){
+  fetch('https://api.mercadolibre.com/categories/MLC1168')
+  .then(response => {
+    return response.json();
+  })
+  .then(data =>{
+    showClothes(data);
+    console.log(data);
+  });
+ 
+ function showClothes(data) {
+  for(let i = 1; i<=12 ; i++){
+       $('#rowProductos').append(`<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgcont" data-index="${i}">
+                                    <div class="col-md-4">
+                                      <img class="card-img-top img-${i}" src="${data.picture}">
+                                    </div>
+                                    <div class="col-md-8">
+                                      <h5 class="card-title text-${i}">${data.name}</h5>
+                                      <p>${data.total_items_in_this_category}</p>
+        </div>
+      </div>`);
+    }
+  }
+ }
+
+inicio();
