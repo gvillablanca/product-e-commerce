@@ -9,6 +9,7 @@ body {
 
 .btn-toolbar, .btn-group{
   width: 100%;
+  margin-left: 25%;
 }
 
 .portfolio-item {
@@ -18,4 +19,7 @@ body {
 
 h2{
   text-align: center;
+}
+a{
+  color:white;
 }
